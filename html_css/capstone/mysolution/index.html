@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="hamburger-logo-wrapper">
+                <a href="#" id="ham toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <div class="logo-wrapper">
+                    <h1>Cory's Nav-Bar</h1>
+                </div>
+            </div>         
+
+            <div class="links-wrapper toggle">
+                <div class="page-navigation">
+                    <div class="link">
+                        <a href="#">Home</a>
+                    </div>
+
+                    <div class="link">
+                        <a href="#">About Us</a>
+                    </div>
+                </div>
+
+                <div class="account-management-wrapper">
+                    <div class="link">
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ham = document.querySelector('#ham');
+        ham.addEventListener('click', (e) => {
+            ham.parentElement.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>

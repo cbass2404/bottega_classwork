@@ -1,0 +1,68 @@
+@mixin flex-container($flex: false, $justify-content: false, $flex-direction: false, $align-items: false){
+    display: flex;
+
+    @if $flex != false {
+        flex: $flex;
+    }
+
+    @if $justify-content != false {
+        justify-content: $justify-content;
+    }
+
+    @if $flex-direction != false {
+        flex-direction: $flex-direction;
+    }
+
+    @if $align-items != false {
+        align-items: $align-items;
+    }
+}
+
+.container {
+    @include flex-container;
+
+    .item {
+        @include flex-container($flex: 1, $justify-content: space-between);  
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        
+        .content {
+            @include flex-container;
+        
+            .metadata {
+                @include flex-container($justify-content: center, $flex-direction: column);
+                margin-left: 20px;
+        
+                .title {
+                    margin: 0px;
+                }
+            }
+        }
+        
+        .btn-group {
+            @include flex-container($align-items: center);
+        
+            .button {
+                @include flex-container($justify-content: center, $flex-direction: row, $align-items: center);
+                height: 100%;
+                width: 42px;
+                font-size: 2em;
+            
+                a {
+                    color: green;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    background-color: maroon;
+                    cursor: pointer;
+            
+                    a {
+                        color: white; 
+                        }
+                }
+            }
+        }
+    }
+}
