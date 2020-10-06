@@ -1,2 +1,3 @@
-// ES6 code goes here
-console.log('es6 code goes here');
+import navigation, { greeting, multiply } from './navigation';
+
+console.log(multiply(10, 10));
