@@ -1,3 +1,2 @@
-import navigation, { greeting, multiply } from './navigation';
-
-console.log(multiply(10, 10));
+import { footer } from 'cory-js-footer';
+console.log(footer('Cory Bass'));
