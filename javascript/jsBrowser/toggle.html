@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8'>
-  <title></title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
 
-<style>
-  .hidden {
-    display: none;
-  }
-</style>
-<body>
+  <style>
+    body {
+      font-size: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <body>
+    <button id="toggleBtn">Toggle Me</button>
 
-  <button id="toggleBtn">Toggle Me</button>
+    <div id="mainHeading" class="hidden">Hi there</div>
+  </body>
 
-  <div id="mainHeading" class="hidden">
-    Hi there
-  </div>
+  <script>
+    const heading = document.getElementById("mainHeading");
+    const btn = document.getElementById("toggleBtn");
 
-</body>
-
-<script>
-
-</script>
+    btn.addEventListener("click", (e) => {
+      heading.classList.toggle("hidden");
+    });
+  </script>
 </html>
