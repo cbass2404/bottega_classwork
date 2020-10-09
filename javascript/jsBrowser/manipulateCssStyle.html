@@ -8,6 +8,11 @@
       img {
         width: 400px;
       }
+
+      .site-img {
+          border: 40px solid transparent;
+          border-radius: 40px;
+      }
     </style>
   </head>
   <body>
@@ -19,6 +24,15 @@
       />
     </div>
   </body>
+  <script>
+    targetImg = document.querySelector(".site-img");
 
-  <script></script>
+    targetImg.addEventListener('mouseover', (e) => {
+        e.target.style.borderBottom = '40px solid red';
+    })
+
+    targetImg.addEventListener('mouseout', (e) => {
+        e.target.style.borderBottom = '40px solid transparent';
+    })
+  </script>
 </html>
