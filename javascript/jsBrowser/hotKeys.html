@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="searchBar" />
+  </body>
+  <script>
+    const hotKeys = (e) => {
+      let windowEvent = window.event ? event : e;
 
-<head>
-  <meta charset='UTF-8'>
-  <title></title>
-</head>
+      if (windowEvent.keyCode === 66 && windowEvent.ctrlKey) {
+        const searchBar = document.querySelector("#searchBar");
+        searchBar.focus();
+      }
+    };
 
-<body>
-
-  <input type="text" id="searchBar">
-
-</body>
-
-<script>
-</script>
-
+    document.onkeydown = hotKeys;
+  </script>
 </html>
