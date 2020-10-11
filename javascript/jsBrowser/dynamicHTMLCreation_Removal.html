@@ -8,6 +8,7 @@
     <div class="widget">
       <input type="text" id="chat-input" />
       <button id="msgBtn" onclick="sendMessage()">Submit</button>
+      <button onclick="clearMessages()">Clear Messages</button>
 
       <div class="chat-wrapper"></div>
     </div>
@@ -29,6 +30,11 @@
       }
 
       widget.insertBefore(newDiv, chatWrapper);
+    }
+
+    function clearMessages() {
+      const messages = document.querySelectorAll('.chatMsg');
+      messages.forEach(message => message.remove());
     }
   </script>
 </html>
