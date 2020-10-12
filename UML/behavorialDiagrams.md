@@ -19,6 +19,14 @@
     - Relationships
 
 - State machine
-
+    - Entry Point
+    - Choice
+    - Constraint
+    - State
+    - Transition
 
 - Sequence
+    - Class Roles or Participants
+    - Activation or Execution Occurrence
+    - Messages
+    - Lifelines
