@@ -3,6 +3,7 @@
 > What is UML?
 - UML lets you create a visual model of how the program works, lets you dumb it down for non programmer people
 
+
 > Activity Diagram:
 - It is best to build out a visual representation of the app before you even start the code, to break down each step of the app
 
