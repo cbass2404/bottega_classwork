@@ -7,14 +7,14 @@
     - Name
     - Attribute
     - Operations
-- Deployment (Elements):
+- Deployment:
     - Nodes
     - Components
     - Artifacts
     - Links
     - Dependencies
     - Associations
-- Packages
+- Packages:
     - Type
     - Classifiers
     - Class
